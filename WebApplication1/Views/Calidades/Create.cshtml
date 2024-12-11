@@ -1,0 +1,115 @@
+﻿@model WebTabitas.Models.ViewModel.AlmacenVM
+@{
+    ViewData["Title"] = "Crear Nuevo Registro";
+    Layout = null; // Sin layout
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/propio.css" rel="stylesheet">
+    <style>
+        .hidden {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-8">
+                <img src="~/Recursos/Logo.jpg" alt="Logo" class="float-left" style="width: 60px; height: 70px; margin-right: 15px;">
+                <h2 class="text-primary d-inline">Nuevo Registro</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form asp-action="Create" method="post" enctype="multipart/form-data">
+                    @* Mostrar errores generales *@
+                    @if (!ViewData.ModelState.IsValid)
+                    {
+                        <div class="alert alert-danger">
+                            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                            {
+                                <p>@error.ErrorMessage</p>
+                            }
+                        </div>
+                    }
+                    <div class="form-group">
+                        <label for="Modelo" class="control-label">Modelo</label>
+                        @Html.DropDownListFor(c => c.Calidad.IdGeneral, Model.ListaGeneral, "-Selecciona el Modelo-",
+                                 new { @class = "form-control" })
+                        <span asp-validation-for="Calidad.IdGeneral" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Calidad.FechaDeRecepcion" class="control-label"></label>
+                        <input asp-for="Calidad.FechaDeRecepcion" type="date" class="form-control" />
+                        <span asp-validation-for="Calidad.FechaDeRecepcion" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Calidad.FechaRevision" class="control-label"></label>
+                        <input asp-for="Calidad.FechaRevision" type="date" class="form-control" />
+                        <span asp-validation-for="Calidad.FechaRevision" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Calidad.Estado" class="control-label"></label>
+                        <select asp-for="Calidad.Estado" class="form-control" id="estadoSelect">
+                            <option value="Aceptado">Aceptado</option>
+                            <option value="Rechazado">Rechazado</option>
+                        </select>
+                        <span asp-validation-for="Calidad.Estado" class="text-danger"></span>
+                    </div>
+
+                    <div id="rechazoFields" class="hidden">
+                        <div class="form-group">
+                            <label asp-for="Calidad.FechaEnvioMaquila" class="control-label"></label>
+                            <input asp-for="Calidad.FechaEnvioMaquila" type="date" class="form-control" />
+                            <span asp-validation-for="Calidad.FechaEnvioMaquila" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Calidad.FechaRecepcionRechazo" class="control-label"></label>
+                            <input asp-for="Calidad.FechaRecepcionRechazo" type="date" class="form-control" />
+                            <span asp-validation-for="Calidad.FechaRecepcionRechazo" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Calidad.Incidencia" class="control-label"></label>
+                        <input asp-for="Calidad.Incidencia" class="form-control" />
+                        <span asp-validation-for="Calidad.Incidencia" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ProcesoActual" class="control-label">Área</label>
+                        @Html.DropDownListFor(c => c.Calidad.IdProceso, Model.ListaAreas, "-Selecciona el Área del Proceso-",
+                                 new { @class = "form-control" })
+                        <span asp-validation-for="Calidad.IdProceso" class="text-danger"></span>
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-primary">Nuevo Registro</button>
+                        <a asp-action="Index" class="btn btn-danger mx-2">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!--Mostrar los Campos de rechazo-->
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const estadoSelect = document.getElementById("estadoSelect");
+        const rechazoFields = document.getElementById("rechazoFields");
+        function toggleRechazoFields() {
+            if (estadoSelect.value === "Rechazado") {
+                rechazoFields.classList.remove("hidden");
+            } else {rechazoFields.classList.add("hidden");}
+        }
+        toggleRechazoFields();
+        estadoSelect.addEventListener("change", toggleRechazoFields);
+    });
+</script>
+

@@ -1,0 +1,88 @@
+﻿@model WebTabitas.Models.ViewModel.AlmacenVM
+@{
+    ViewData["Title"] = "Crear Nuevo Registro";
+    Layout = null; // Sin layout
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/propio.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-8">
+                <img src="~/Recursos/Logo.jpg" alt="Logo" class="float-left" style="width: 60px; height: 70px; margin-right: 15px;">
+                <h2 class="text-primary d-inline">Nuevo Registro</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form asp-action="Create" method="post" enctype="multipart/form-data">
+                    @* Mostrar errores generales *@
+                    @if (!ViewData.ModelState.IsValid)
+                    {
+                        <div class="alert alert-danger">
+                            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                            {
+                                <p>@error.ErrorMessage</p>
+                            }
+                        </div>
+                    }
+                    <div class="form-group">
+                        <label for="Modelo" class="control-label">Modelo</label>
+                        @Html.DropDownListFor(c => c.Bordado.IdGeneral, Model.ListaGeneral, "-Selecciona el Modelo-",
+                                 new { @class = "form-control" })
+                        <span asp-validation-for="Bordado.IdGeneral" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Bordado.Encargado" class="control-label"></label>
+                        <input asp-for="Bordado.Encargado" class="form-control" />
+                        <span asp-validation-for="Bordado.Encargado" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Bordado.FechaCorte" class="control-label"></label>
+                        <input asp-for="Bordado.FechaCorte" type="date" class="form-control" />
+                        <span asp-validation-for="Bordado.FechaCorte" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Bordado.FechaRecepcion" class="control-label"></label>
+                        <input asp-for="Bordado.FechaRecepcion" type="date" class="form-control" />
+                        <span asp-validation-for="Bordado.FechaRecepcion" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Bordado.FechaEntrega" class="control-label"></label>
+                        <input asp-for="Bordado.FechaEntrega" type="date" class="form-control" />
+                        <span asp-validation-for="Bordado.FechaEntrega" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Bordado.CantidadRecibida" class="control-label"></label>
+                        <input asp-for="Bordado.CantidadRecibida" class="form-control" />
+                        <span asp-validation-for="Bordado.CantidadRecibida" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Bordado.Incidencias" class="control-label"></label>
+                        <input asp-for="Bordado.Incidencias" class="form-control" />
+                        <span asp-validation-for="Bordado.Incidencias" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ProcesoActual" class="control-label">Área</label>
+                        @Html.DropDownListFor(c => c.Bordado.IdProceso, Model.ListaAreas, "-Selecciona el Área del Proceso-",
+                                 new { @class = "form-control" })
+                        <span asp-validation-for="Bordado.IdProceso" class="text-danger"></span>
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-primary">Nuevo Registro</button>
+                        <a asp-action="Index" class="btn btn-danger mx-2">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1924 @@
+[
+  {
+    "ContainingType": "TabitasAPI.Controllers.AlmacenController",
+    "Method": "GetAlmacen",
+    "RelativePath": "api/Almacen",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.AlmacenController",
+    "Method": "AddModelo",
+    "RelativePath": "api/Almacen",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdGeneral",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaRecepcion",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaLiberacion",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Auxiliar",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaEntregaAvios",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaDevolicionTelas",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaLibeCorte",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaCarpeta",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "Incidencias",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdProceso",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.AlmacenDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.AlmacenController",
+    "Method": "GetAlmacenById",
+    "RelativePath": "api/Almacen/{Idalmacen}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Idalmacen",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.AlmacenDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.AlmacenController",
+    "Method": "UpdateAlmacen",
+    "RelativePath": "api/Almacen/{Idalmacen}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Idalmacen",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "almacenUpdateDto",
+        "Type": "TabitasAPI.DTOs.AlmacenUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.AlmacenController",
+    "Method": "GetAlmacenByModelo",
+    "RelativePath": "api/Almacen/GetAlmacenByModelo/{Modelo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Modelo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.AlmacenDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.BordadoController",
+    "Method": "GetBordado",
+    "RelativePath": "api/Bordado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.BordadoController",
+    "Method": "AddModelo",
+    "RelativePath": "api/Bordado",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Encargado",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaCorte",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaRecepcion",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaEntrega",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CantidadRecibida",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Incidencias",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdGeneral",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdProceso",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.BordadoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.BordadoController",
+    "Method": "GetBordadoById",
+    "RelativePath": "api/Bordado/{Idbordado}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Idbordado",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.BordadoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.BordadoController",
+    "Method": "UpdateBordado",
+    "RelativePath": "api/Bordado/{Idbordado}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Idbordado",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "bordadoUpdateDto",
+        "Type": "TabitasAPI.DTOs.BordadoUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.Models.Bordado",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.BordadoController",
+    "Method": "GetBordadoByModelo",
+    "RelativePath": "api/Bordado/GetBordadoByModelo/{Modelo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Modelo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.BordadoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.CalidadController",
+    "Method": "GetCalidad",
+    "RelativePath": "api/Calidad",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.CalidadController",
+    "Method": "AddModelo",
+    "RelativePath": "api/Calidad",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FechaDeRecepcion",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaRevision",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "Estado",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaEnvioMaquila",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaRecepcionRechazo",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Incidencia",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdGeneral",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdProceso",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.CalidadDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.CalidadController",
+    "Method": "GetCalidadById",
+    "RelativePath": "api/Calidad/{Idcalidad}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Idcalidad",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.CalidadDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.CalidadController",
+    "Method": "UpdateCalidad",
+    "RelativePath": "api/Calidad/{Idcalidad}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Idcalidad",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "calidadUpdateDto",
+        "Type": "TabitasAPI.DTOs.CalidadUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.Models.Calidad",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.CalidadController",
+    "Method": "GetCalidadByModelo",
+    "RelativePath": "api/Calidad/GetCalidadByModelo/{Modelo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Modelo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.CalidadDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.CorteController",
+    "Method": "GetCorte",
+    "RelativePath": "api/Corte",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.CorteController",
+    "Method": "AddModelo",
+    "RelativePath": "api/Corte",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Encargado",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EntregaCorte",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "CantidadCortadas",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "RutaImagen",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Imagen",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "PiezasSolicitadas",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaAVentas",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaEntrega",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Incidencias",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdGeneral",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdProceso",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.CorteDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.CorteController",
+    "Method": "GetCorteById",
+    "RelativePath": "api/Corte/{Idcorte}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Idcorte",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.CorteDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.CorteController",
+    "Method": "UpdateCorte",
+    "RelativePath": "api/Corte/{Idcorte}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Idcorte",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "corteUpdateDto",
+        "Type": "TabitasAPI.DTOs.CorteUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.Models.Corte",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.CorteController",
+    "Method": "GetCorteByModelo",
+    "RelativePath": "api/Corte/GetCorteByModelo/{Modelo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Modelo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.CorteDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.CorteLaserController",
+    "Method": "GetCorteLaser",
+    "RelativePath": "api/CorteLaser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.CorteLaserController",
+    "Method": "AddModelo",
+    "RelativePath": "api/CorteLaser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CantidadCortadas",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Encargado",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaRecepcion",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaEntrega",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Recibe",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Incidencias",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdGeneral",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdProceso",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.CorteLaserDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.CorteLaserController",
+    "Method": "GetCorteLaserById",
+    "RelativePath": "api/CorteLaser/{IdcorteLaser}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdcorteLaser",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.CorteLaserDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.CorteLaserController",
+    "Method": "UpdateCorteLaser",
+    "RelativePath": "api/CorteLaser/{IdcorteLaser}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdcorteLaser",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "corteLaserUpdateDto",
+        "Type": "TabitasAPI.DTOs.CorteLaserUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.Models.CorteLaser",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.CorteLaserController",
+    "Method": "GetCorteLaserByModelo",
+    "RelativePath": "api/CorteLaser/GetCorteLaserByModelo/{Modelo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Modelo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.CorteLaserDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.EtiquetaController",
+    "Method": "GetEtiqueta",
+    "RelativePath": "api/Etiqueta",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.EtiquetaController",
+    "Method": "AddModelo",
+    "RelativePath": "api/Etiqueta",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FechaEntregaMaquila",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaEntregaTerminado",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Incidencias",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdGeneral",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdProceso",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.EtiquetaDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.EtiquetaController",
+    "Method": "GetEtiquetaById",
+    "RelativePath": "api/Etiqueta/{Idetiquetas}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Idetiquetas",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.EtiquetaDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.EtiquetaController",
+    "Method": "UpdateEtiqueta",
+    "RelativePath": "api/Etiqueta/{Idetiquetas}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Idetiquetas",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "etiquetaUpdateDto",
+        "Type": "TabitasAPI.DTOs.EtiquetaUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.Models.Etiqueta",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.EtiquetaController",
+    "Method": "GetEtiquetaByModelo",
+    "RelativePath": "api/Etiqueta/GetEtiquetaByModelo/{Modelo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Modelo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.EtiquetaDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.GeneralController",
+    "Method": "GetGeneral",
+    "RelativePath": "api/General",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.GeneralController",
+    "Method": "AddModelo",
+    "RelativePath": "api/General",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Modelo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "RutaImagen",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Imagen",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Descripcion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "RangoTallas",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Temporadas",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Pt",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NumeroOrden",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CantidadRequerida",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaRecepcion",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaEntrega",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdProceso",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.GeneralDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.GeneralController",
+    "Method": "GetGeneralById",
+    "RelativePath": "api/General/{Idgeneral}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Idgeneral",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.GeneralDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.GeneralController",
+    "Method": "UpdateGeneral",
+    "RelativePath": "api/General/{Idgeneral}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Idgeneral",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "generalUpdateDto",
+        "Type": "TabitasAPI.DTOs.GeneralUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.Models.General",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.GeneralController",
+    "Method": "GetGeneralByModelo",
+    "RelativePath": "api/General/GetByModelo/{Modelo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Modelo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.GeneralDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.LavadoController",
+    "Method": "GetLavado",
+    "RelativePath": "api/Lavado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.LavadoController",
+    "Method": "AddModelo",
+    "RelativePath": "api/Lavado",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Proveedor",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaEnvio",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaRecepcion",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaEntrega",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CantidadRecibida",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Incidencias",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdGeneral",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdProceso",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.LavadoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.LavadoController",
+    "Method": "GetLavadoById",
+    "RelativePath": "api/Lavado/{Idlavado}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Idlavado",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.LavadoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.LavadoController",
+    "Method": "UpdateLavado",
+    "RelativePath": "api/Lavado/{Idlavado}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Idlavado",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "lavadoUpdateDto",
+        "Type": "TabitasAPI.DTOs.LavadoUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.Models.Lavado",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.LavadoController",
+    "Method": "GetLavadoByModelo",
+    "RelativePath": "api/Lavado/GetLavadoByModelo/{Modelo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Modelo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.LavadoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.MaquilaController",
+    "Method": "GetMaquila",
+    "RelativePath": "api/Maquila",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.MaquilaController",
+    "Method": "AddModelo",
+    "RelativePath": "api/Maquila",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Maquilero1",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Maquilero2",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Maquilero3",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Maquilero4",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaEntregaMaq1",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaEntregaMaq2",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaEntregaMaq3",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaEntregaMaq4",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaMaquila",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaRecepcion",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaEntrega",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CantidadRecibida",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Incidencias",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdGeneral",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdProceso",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.MaquilaDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.MaquilaController",
+    "Method": "GetMaquilaById",
+    "RelativePath": "api/Maquila/{Idmaquila}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Idmaquila",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.MaquilaDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.MaquilaController",
+    "Method": "UpdateMaquila",
+    "RelativePath": "api/Maquila/{Idmaquila}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Idmaquila",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "maquilaUpdateDto",
+        "Type": "TabitasAPI.DTOs.MaquilaUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.Models.Maquila",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.MaquilaController",
+    "Method": "GetMaquilaByModelo",
+    "RelativePath": "api/Maquila/GetMaquilaByModelo/{Modelo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Modelo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.MaquilaDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.ProcesoActualController",
+    "Method": "GetProcesoActual",
+    "RelativePath": "api/ProcesoActual",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.SerigrafiaController",
+    "Method": "GetSerigrafia",
+    "RelativePath": "api/Serigrafia",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.SerigrafiaController",
+    "Method": "AddModelo",
+    "RelativePath": "api/Serigrafia",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Encargado",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaCorte",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaRecepcion",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaEntrega",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CantidadRecibida",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Incidencias",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdGeneral",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdProceso",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.SerigrafiaDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.SerigrafiaController",
+    "Method": "GetSerigrafiaById",
+    "RelativePath": "api/Serigrafia/{Idserigrafia}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Idserigrafia",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.SerigrafiaDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.SerigrafiaController",
+    "Method": "UpdateSerigrafia",
+    "RelativePath": "api/Serigrafia/{Idserigrafia}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Idserigrafia",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "serigrafiaUpdateDto",
+        "Type": "TabitasAPI.DTOs.SerigrafiaUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.Models.Serigrafia",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.SerigrafiaController",
+    "Method": "GetSerigrafiaByModelo",
+    "RelativePath": "api/Serigrafia/GetSerigrafiaByModelo/{Modelo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Modelo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.SerigrafiaDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.TerminadoController",
+    "Method": "GetTerminado",
+    "RelativePath": "api/Terminado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.TerminadoController",
+    "Method": "AddModelo",
+    "RelativePath": "api/Terminado",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Encargado",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CantidadEntregada",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Saldo",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "MotivoFaltante",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaEntrega",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdGeneral",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdProceso",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.TerminadoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.TerminadoController",
+    "Method": "GetTerminadoById",
+    "RelativePath": "api/Terminado/{Idterminado}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Idterminado",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.TerminadoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.TerminadoController",
+    "Method": "UpdateTerminado",
+    "RelativePath": "api/Terminado/{Idterminado}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Idterminado",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "terminadoUpdateDto",
+        "Type": "TabitasAPI.DTOs.TerminadoUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.Models.Terminado",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.TerminadoController",
+    "Method": "GetTerminadoByModelo",
+    "RelativePath": "api/Terminado/GetTerminadoByModelo/{Modelo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Modelo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TabitasAPI.DTOs.TerminadoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.UsuarioController",
+    "Method": "GetUsuarios",
+    "RelativePath": "api/Usuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 403
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.UsuarioController",
+    "Method": "GetUsuario",
+    "RelativePath": "api/Usuario/{idUsuario}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUsuario",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 403
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ],
+    "EndpointName": "GetUsuario"
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.UsuarioController",
+    "Method": "Registro",
+    "RelativePath": "api/Usuario/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioLoginDTO",
+        "Type": "TabitasAPI.DTOs.UsuarioLoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 403
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.UsuarioController",
+    "Method": "Registro",
+    "RelativePath": "api/Usuario/Registro",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioInsertDTO",
+        "Type": "TabitasAPI.DTOs.UsuarioInsertDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 403
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "TabitasAPI.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TabitasAPI.WeatherForecast, TabitasAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

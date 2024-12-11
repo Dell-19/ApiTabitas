@@ -1,0 +1,46 @@
+﻿@model WebTabitas.Models.Almacen
+@{
+    ViewData["Title"] = "Lista Modelos";
+}
+<head>
+    <link href="../css/propio.css" rel="stylesheet">
+</head>
+<div class="container py-4">
+    <div class="row mb-4">
+        <div class="col-8">
+            <h2 class="text-primary">
+                <i class="fas fa-list-alt"></i> Lista Modelos
+            </h2>
+        </div>
+        <div class="d-flex justify-content-end align-items-center mb-3">
+            <div id="tblAlmacen_filter" class="dataTables_filter me-2"></div>
+            <a asp-action="Create" class="btn btn-success text-white">
+                <i class="fas fa-plus"></i> Nuevo Modelo
+            </a>
+        </div>
+
+    <div class="table-responsive">
+        <table id="tblAlmacen" class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">IdAlmacen</th>
+                    <th scope="col">Modelo</th>
+                    <th scope="col">FechaRecepcion</th>
+                    <th scope="col">FechaLiberacion</th>
+                    <th scope="col">Auxiliar</th>
+                    <th scope="col">FechaEntregaAvios</th>
+                    <th scope="col">FechaDevolicionTelas</th>
+                    <th scope="col">FechaLiberacionCorte</th>
+                    <th scope="col">FechaCarpeta</th>
+                    <th scope="col">Incidencias</th>
+                    <th scope="col">Area</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody><!--Aqui iran las filas generadas por DataTables--></tbody>
+        </table>
+    </div>
+</div>
+@section Scripts {
+    <script src="~/js/Almacen.js"></script><!--el archivo que va a utilizar datatables para llenar los datos  -->
+}

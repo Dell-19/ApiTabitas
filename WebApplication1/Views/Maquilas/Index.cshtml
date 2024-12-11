@@ -1,0 +1,51 @@
+﻿@model WebTabitas.Models.Maquila
+@{
+    ViewData["Title"] = "Lista Modelos";
+}
+<head>
+    <link href="../css/propio.css" rel="stylesheet">
+</head>
+<div class="container py-4">
+    <div class="row mb-4">
+        <div class="col-8">
+            <h2 class="text-primary">
+                <i class="fas fa-list-alt"></i> Lista Modelos
+            </h2>
+        </div>
+        <div class="d-flex justify-content-end align-items-center mb-3">
+            <div id="tblMaquila_filter" class="dataTables_filter me-2"></div>
+            <a asp-action="Create" class="btn btn-success text-white">
+                <i class="fas fa-plus"></i> Nuevo Modelo
+            </a>
+        </div>
+
+    <div class="table-responsive">
+        <table id="tblMaquila" class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Modelo</th>
+                    <th scope="col">Maquilero1</th>
+                    <th scope="col">Maquilero2</th>
+                    <th scope="col">Maquilero3</th>
+                    <th scope="col">Maquilero4</th>
+                    <th scope="col">FechaEntregaMaq1</th>
+                    <th scope="col">FechaEntregaMaq2</th>
+                    <th scope="col">FechaEntregaMaq3</th>
+                    <th scope="col">FechaEntregaMaq4</th>
+                    <th scope="col">FechaMaquila</th>
+                    <th scope="col">FechaRecepcion</th>
+                    <th scope="col">FechaEntrega</th>
+                    <th scope="col">CantidadRecibida</th>
+                    <th scope="col">Incidencias</th>
+                    <th scope="col">Area</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody><!--Aqui iran las filas generadas por DataTables--></tbody>
+        </table>
+    </div>
+</div>
+@section Scripts {
+    <script src="~/js/Maquila.js"></script><!--el archivo que va a utilizar datatables para llenar los datos  -->
+}

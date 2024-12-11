@@ -1,0 +1,191 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebTabitas
+build_property.RootNamespace = WebTabitas
+build_property.ProjectDir = C:\Users\YARELY\Desktop\Recidencias\TabitasAPI\WebApplication1\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\YARELY\Desktop\Recidencias\TabitasAPI\WebApplication1
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Almacenes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxtYWNlbmVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Almacenes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxtYWNlbmVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Almacenes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxtYWNlbmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Bordados/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9yZGFkb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Bordados/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9yZGFkb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Bordados/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9yZGFkb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Calidades/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaWRhZGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Calidades/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaWRhZGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Calidades/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaWRhZGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/CorteLaseres/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29ydGVMYXNlcmVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/CorteLaseres/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29ydGVMYXNlcmVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/CorteLaseres/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29ydGVMYXNlcmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Cortes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29ydGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Cortes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29ydGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Cortes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29ydGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Etiquetas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRpcXVldGFzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Etiquetas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRpcXVldGFzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Etiquetas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRpcXVldGFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Generales/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZXJhbGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Generales/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZXJhbGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Generales/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZXJhbGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Home/Registro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Ryby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Lavados/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF2YWRvc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Lavados/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF2YWRvc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Lavados/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF2YWRvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Maquilas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFxdWlsYXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Maquilas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFxdWlsYXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Maquilas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFxdWlsYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Serigrafias/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VyaWdyYWZpYXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Serigrafias/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VyaWdyYWZpYXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Serigrafias/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VyaWdyYWZpYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Terminados/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVybWluYWRvc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Terminados/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVybWluYWRvc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Terminados/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVybWluYWRvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/YARELY/Desktop/Recidencias/TabitasAPI/WebApplication1/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ybkj36b6y4

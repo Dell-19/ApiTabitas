@@ -1,0 +1,63 @@
+﻿@model WebTabitas.Models.Almacen
+@{
+    ViewData["Title"] = "Editar Registro";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/propio.css" rel="stylesheet">
+</head>
+<body>
+    <div class="row mb-4">
+        <div class="col-8">
+            <img src="~/Recursos/Logo.jpg" alt="Logo" class="float-left" style="width: 60px; height: 70px; margin-right: 15px;">
+            <h2 class="text-primary d-inline">Editar Registro</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="Update" method="post" enctype="multipart/form-data">
+                @* Mostrar errores generales *@
+                @if (!ViewData.ModelState.IsValid)
+                {
+                    <div class="alert alert-danger">
+                        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                        {
+                            <p>@error.ErrorMessage</p>
+                        }
+                    </div>
+                }
+                <input type="hidden" asp-for="IdAlmacen" />
+                <div class="form-group">
+                    <label asp-for="FechaLiberacion" class="control-label"></label>
+                    <input asp-for="FechaLiberacion" type="date" class="form-control" />
+                    <span asp-validation-for="FechaLiberacion" class="text-danger"></span>
+                </div>
+                <input type="hidden" asp-for="Auxiliar" />
+                <div class="form-group">
+                    <label asp-for="FechaDevolicionTelas" class="control-label"></label>
+                    <input asp-for="FechaDevolicionTelas" type="date" class="form-control" />
+                    <span asp-validation-for="FechaDevolicionTelas" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Incidencias" class="control-label"></label>
+                    <input asp-for="Incidencias" class="form-control" />
+                    <span asp-validation-for="Incidencias" class="text-danger"></span>
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary">Editar Registro</button>
+                    <a asp-action="Index" class="btn btn-danger mx-2">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+

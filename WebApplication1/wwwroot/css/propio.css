@@ -1,0 +1,73 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #D3E6EA 0%, #afb2ed 100%);
+    padding: 0;
+}
+
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+    .logo-container img {
+        width: 60px;
+        height: 70px;
+    }
+
+.form-group {
+    margin-bottom: 1rem; /* Espacio entre grupos de formularios */
+}
+
+.dataTables_filter {
+    margin-bottom: 20px; /* Espaciado adicional para la búsqueda */
+}
+
+    .dataTables_filter label {
+        font-weight: bold; /* Para resaltar el texto */
+    }
+
+    .dataTables_filter input {
+        width: 300px; /* Aumentar el ancho del campo */
+        padding: 10px; /* Espaciado interno */
+        border-radius: 5px; /* Bordes redondeados */
+        border: 2px solid #007BFF; /* Color del borde */
+        background-color: #f8f9fa; /* Fondo gris claro */
+    }
+.custom-width {
+    width: 50% !important; /* Ajusta el 50% del ancho de la página */
+}
+#tblAlmacen_filter {
+    text-align: right;
+}
+#tblGeneral_filter {
+    text-align: right;
+}
+#tblBordado_filter {
+    text-align: right;
+}
+#tblCalidad_filter {
+    text-align: right;
+}
+#tblEtiqueta_filter {
+    text-align: right;
+}
+#tblCorte_filter {
+    text-align: right;
+}
+#tblCorteLaser_filter {
+    text-align: right;
+}
+#tblMaquila_filter {
+    text-align: right;
+}
+#tblSerigrafia_filter {
+    text-align: right;
+}
+#tblTerminado_filter {
+    text-align: right;
+}
+#tblLavado_filter {
+    text-align: right;
+}
+
